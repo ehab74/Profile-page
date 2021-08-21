@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--script>
+      function submit() {
+        setTimeout(function () {
+          document.getElementById("form1").submit();
+        }, 1000);
+        setTimeout(function () {
+          document.getElementById("form2").submit();
+        }, 3000);
+      }
+
+      function reset() {
+        document.getElementById("form1").reset();
+        document.getElementById("form2").reset();
+      }
+    </script-->
+  </head>
+  <body>
+    <form id="form1" method="GET" action="./profile.html" target="_blank">
+      <fieldset style="width: 500px">
+        <legend>Account</legend>
+        <label>Profile picture: </label>
+        <input type="file" />
+        <br />
+        <br />
+        <label>Username: </label>
+        <input name="username" required type="text" />
+        <br />
+        <br />
+        <label>Password: </label>
+        <input type="password" required />
+      </fieldset>
+    
+    <br />
+
+    <!--form id="form2" method="GET" action="./profile.html" target="_blank"-->
+      <fieldset style="width: 500px">
+        <legend>Contacts</legend>
+        <label>Facebook: </label>
+        <input name="facebook" type="text" required />
+        <br />
+        <br />
+        <label>Email: </label>
+        <input name="email" type="email" required />
+        <br />
+        <br />
+        <label>Mobile: </label>
+        <input name="mobile" type="number" required />
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit"  />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <br />
+    <br />
+
+    <form action="./profile.html">
+      <input type="submit" value="Back" />
+    </form>
+  </body>
+</html>
